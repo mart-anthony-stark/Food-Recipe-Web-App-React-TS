@@ -32,3 +32,22 @@ nav .logo {
 nav .logo img {
   height: 60px;
 }
+nav a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: var(--c-accent);
+  transition: 0.5s ease-in-out;
+}
+nav a:hover {
+  color: var(--c-accent);
+}
+nav a:hover::after {
+  width: 100%;
+}
