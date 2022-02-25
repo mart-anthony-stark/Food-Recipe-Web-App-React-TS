@@ -1,4 +1,5 @@
 import Logo from '../../assets/img/logo.png'
+import './navbar.css'
 const Navbar = () =>{
     return (<nav>
         <div className="left">
