@@ -1,3 +1,4 @@
 .banner {
-  height: calc(100vh - 60px);
+  height: calc(80vh - 60px);
+  background: url("../../assets/img/banner-bg.jpg");
 }
