@@ -3,3 +3,19 @@
   background: url("../../assets/img/banner-bg.jpg");
   border-radius: 10px;
 }
+.banner .search-box {
+  width: 50%;
+  height: 50px;
+  display: flex;
+}
+.banner .search-box input {
+  height: 100%;
+  flex: 1;
+  padding: 10px;
+}
+.banner .search-box button {
+  color: #fff;
+  background: var(--c-accent);
+  border: none;
+  padding: 20px;
+}
