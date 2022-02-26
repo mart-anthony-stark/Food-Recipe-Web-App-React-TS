@@ -9,3 +9,11 @@
 :root {
   --c-accent: #eb4935;
 }
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
