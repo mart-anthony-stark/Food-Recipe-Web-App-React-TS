@@ -17,3 +17,15 @@
 button {
   cursor: pointer;
 }
+.heading h1 {
+  display: inline-block;
+  color: var(--c-accent);
+  font-weight: 400;
+}
+.heading h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 70%;
+  background: var(--c-accent);
+}
