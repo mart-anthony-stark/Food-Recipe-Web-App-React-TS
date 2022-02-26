@@ -7,12 +7,14 @@ import Home from './views/home/Home'
 function App() {
   return (
     <div className="App">
+      <main>
       <Router>
         <Routes>
           <Route path="/" element={<Navigate to="/home"/>}/>
           <Route path="/home" element={<Home/>}/>
         </Routes>
       </Router>
+      </main>
 
     </div>
   )
