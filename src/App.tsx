@@ -2,7 +2,7 @@ import './App.css'
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import Banner from './components/banner/Banner'
-import Home from './views/Home'
+import Home from './views/home/Home'
 
 function App() {
   return (
