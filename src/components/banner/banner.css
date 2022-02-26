@@ -1,4 +1,5 @@
 .banner {
   height: calc(80vh - 60px);
   background: url("../../assets/img/banner-bg.jpg");
+  border-radius: 10px;
 }
