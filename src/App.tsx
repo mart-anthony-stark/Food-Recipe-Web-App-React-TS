@@ -1,8 +1,9 @@
+import { lazy, Suspense } from 'react'
 import './App.css'
 import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
 import Navbar from './components/navbar/Navbar'
 import Banner from './components/banner/Banner'
-import Home from './views/home/Home'
+const Home = lazy(()=> import('./views/home/Home'))
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Navigate to="/home"/>}/>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/home" element={<Suspense fallback={<>...</>}><Home/></Suspense>}/>
         </Routes>
       </Router>
       </main>
