@@ -1,6 +1,8 @@
 .banner {
   height: calc(80vh - 60px);
   background: url("../../assets/img/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
 }
 .banner .search-box {
