@@ -33,8 +33,11 @@ const Home = () => {
       <Heading title="Categories" />
       <div className="categories">
         {categories.map(({ name, src }) => (
-          <div className="category">
-            <LazyLoadImage src={src} effect="blur" />
+          <div className="category center-items">
+            <div className="image">
+              <LazyLoadImage src={src} effect="blur" />
+            </div>
+            <h3>{name}</h3>
           </div>
         ))}
       </div>
