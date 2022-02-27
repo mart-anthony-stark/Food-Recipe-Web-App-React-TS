@@ -25,3 +25,7 @@
 .category img:hover {
   transform: scale(1.2);
 }
+.category .category-name {
+  color: var(--c-accent);
+  font-weight: 400;
+}
