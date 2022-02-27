@@ -1,7 +1,6 @@
 import { Suspense, lazy } from "react";
 import "./home.css";
 import Banner from "../../components/banner/Banner";
-import Navbar from "../../components/navbar/Navbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import Heading from "../../components/Heading";
@@ -33,7 +32,6 @@ const categories: Category[] = [
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Banner />
       <Heading title="Categories" />
       <div className="categories">
