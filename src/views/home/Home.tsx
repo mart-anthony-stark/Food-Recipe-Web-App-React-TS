@@ -8,20 +8,24 @@ import Heading from "../../components/Heading";
 interface Category {
   name: string;
   src: string;
+  link: string;
 }
 
 const categories: Category[] = [
   {
     name: "Main course",
     src: "/src/assets/img/steak.jpg",
+    link: "/categories/main-course",
   },
   {
     name: "Side dish",
     src: "/src/assets/img/side-dish.jpg",
+    link: "/categories/side-dish",
   },
   {
     name: "Desserts",
     src: "/src/assets/img/dessert.jpg",
+    link: "/categories/dessert",
   },
 ];
 
