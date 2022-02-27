@@ -3,6 +3,7 @@ import "./home.css";
 import Banner from "../../components/banner/Banner";
 import Navbar from "../../components/navbar/Navbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
 import Heading from "../../components/Heading";
 
 interface Category {
@@ -36,13 +37,15 @@ const Home = () => {
       <Banner />
       <Heading title="Categories" />
       <div className="categories">
-        {categories.map(({ name, src }) => (
-          <div className="category center-items">
-            <div className="image">
-              <LazyLoadImage src={src} effect="blur" />
+        {categories.map(({ name, src, link }) => (
+          <Link to={link}>
+            <div className="category center-items">
+              <div className="image">
+                <LazyLoadImage src={src} effect="blur" />
+              </div>
+              <h3>{name}</h3>
             </div>
-            <h3>{name}</h3>
-          </div>
+          </Link>
         ))}
       </div>
     </>
