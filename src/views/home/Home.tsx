@@ -43,7 +43,7 @@ const Home = () => {
               <div className="image">
                 <LazyLoadImage src={src} effect="blur" />
               </div>
-              <h3>{name}</h3>
+              <h2 className="category-name">{name}</h2>
             </div>
           </Link>
         ))}
