@@ -5,7 +5,12 @@ import Navbar from "../../components/navbar/Navbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Heading from "../../components/Heading";
 
-const categories = [
+interface Category {
+  name: string;
+  src: string;
+}
+
+const categories: Category[] = [
   {
     name: "Main course",
     src: "/src/assets/img/steak.jpg",
