@@ -5,6 +5,20 @@ import Navbar from "../../components/navbar/Navbar";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Heading from '../../components/Heading';
 
+const categories = [
+  {
+    name: 'Main course',
+    src: '/src/assets/img/steak.jpg'
+  },
+  {
+    name: 'Side dish',
+    src: '/src/assets/img/side-dish.jpg'
+  },
+  {
+    name: 'Desserts',
+    src: '/src/assets/img/dessert.jpg'
+  },
+]
 
 const Home = () => {
   return (
