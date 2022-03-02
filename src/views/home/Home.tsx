@@ -40,7 +40,7 @@ const Home = () => {
             <div className="category center-items">
               <div className="image">
                 <div className="overlay">
-                  <span>{name}</span>
+                  <span>See Recipes</span>
                 </div>
                 <LazyLoadImage src={src} effect="blur" />
               </div>
