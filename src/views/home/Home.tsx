@@ -39,6 +39,9 @@ const Home = () => {
           <Link to={link}>
             <div className="category center-items">
               <div className="image">
+                <div className="overlay">
+                  <span>{name}</span>
+                </div>
                 <LazyLoadImage src={src} effect="blur" />
               </div>
               <h2 className="category-name">{name}</h2>
