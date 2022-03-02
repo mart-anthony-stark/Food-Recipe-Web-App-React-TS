@@ -15,19 +15,14 @@ function App() {
       <main>
         <Navbar />
 
-        <Router>
-          <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
-            <Route
-              path="/home"
-              element={
-                <Suspense fallback={<>...</>}>
-                  <Home />
-                </Suspense>
-              }
-            />
-          </Routes>
-        </Router>
+        <Suspense fallback={<></>}>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Navigate to="/home" />} />
+              <Route path="/home" element={<Home />} />
+            </Routes>
+          </Router>
+        </Suspense>
       </main>
     </div>
   );
