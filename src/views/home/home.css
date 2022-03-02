@@ -26,7 +26,14 @@
 .category .image .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.336);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.category:hover .overlay {
+  opacity: 1;
 }
 .category img:hover {
   transform: scale(1.2);
