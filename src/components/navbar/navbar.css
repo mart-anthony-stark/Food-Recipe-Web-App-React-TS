@@ -4,6 +4,10 @@ nav {
   padding: 0 25px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #fff;
 }
 nav .left,
 nav .right,
