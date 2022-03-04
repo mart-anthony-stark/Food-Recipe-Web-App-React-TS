@@ -1,14 +1,7 @@
 import axios from "axios";
 
+const BASE_URL = "https://spoonacular.com";
 
-const getRequest = (url: string, payload: any) => {
-  return axios.create({
-    method: "GET",
-    url,
-    params: payload.params,
-  });
-};
-
-export default {
-  getRequest,
-};
+export const recipeRequest = axios.create({
+  baseURL: BASE_URL,
+});
