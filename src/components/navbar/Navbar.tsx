@@ -13,8 +13,10 @@ const Navbar = () => {
           <div className="bar"></div>
         </div>
       </div>
-      <div className="logo">
-        <img src={Logo} alt="Kitcheen" />
+      <div className="mid">
+        <div className="logo">
+          <img src={Logo} alt="Kitcheen" />
+        </div>
       </div>
       <div className="right">
         <a href="#">About</a>
