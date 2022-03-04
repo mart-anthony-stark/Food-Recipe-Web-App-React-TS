@@ -43,7 +43,7 @@ const Home = () => {
       <Heading title="Categories" />
       <div className="categories">
         {categories.map(({ name, description, src, link }) => (
-          <Link to={link}>
+          <Link to={link} key={name}>
             <div className="category center-items">
               <div className="image">
                 <div className="overlay center-items">
