@@ -9,11 +9,18 @@ interface Recipe {
   summary: string;
   dishTypes: string[];
   instructions: string;
-  analyzedInstructions: Array;
+  analyzedInstructions: [];
 }
 
 const Featured = () => {
   const [recipes, setRecipes] = useState();
+
+  const getRandomRecipe = async () => {
+      
+  };
+
+  useEffect(() => {}, []);
+
   return <div className="featured"></div>;
 };
 
