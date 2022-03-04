@@ -57,6 +57,11 @@ const Home = () => {
           </Link>
         ))}
       </div>
+
+      <Heading title="Featured Recipes" />
+      <div className="featured">
+        
+      </div>
     </>
   );
 };
