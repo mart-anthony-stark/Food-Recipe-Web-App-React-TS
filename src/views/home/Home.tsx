@@ -5,6 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import Heading from "../../components/Heading";
 import Card from "../../components/card/Card";
+import Featured from "../../components/featured/Featured";
 
 interface Category {
   name: string;
@@ -60,9 +61,7 @@ const Home = () => {
       </div>
 
       <Heading title="Featured Recipes" />
-      <div className="featured">
-        <Card><h1>asd</h1></Card>
-      </div>
+      <Featured />
     </>
   );
 };
