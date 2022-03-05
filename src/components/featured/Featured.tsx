@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { recipeRequest } from "../../services/web-request";
 
-interface Recipe {
+interface IRecipes {
   id: number;
   title: string;
   sourceUrl: string;
@@ -14,26 +14,31 @@ interface Recipe {
 }
 
 const Featured = () => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState<any>([]);
 
   const getRandomRecipe = async () => {
-    const recipes = await recipeRequest.get(
+    const res = await recipeRequest.get(
       `https://api.spoonacular.com/recipes/random?apiKey=${
         import.meta.env.VITE_API_KEY
       }`
     );
-    console.log(recipes);
-    setRecipes((prev: any) => {
-      return prev.push(recipes);
-    });
-    return recipes;
+    const recipe = res.data.recipes[0];
+    console.log(recipe);
+    setRecipes([...recipes, recipe]);
+    console.log("e", recipes);
   };
 
   useEffect(() => {
     getRandomRecipe();
   }, []);
-
-  return <div className="featured"></div>;
+  console.log(recipes);
+  return (
+    <div className="featured">
+      {recipes.map((recipe: any) => {
+        return <div>{recipe.title}</div>;
+      })}
+    </div>
+  );
 };
 
 export default Featured;
