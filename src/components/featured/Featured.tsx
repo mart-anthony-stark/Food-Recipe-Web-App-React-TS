@@ -29,7 +29,9 @@ const Featured = () => {
   };
 
   useEffect(() => {
-    getRandomRecipe();
+    for (let i = 0; i < 5; i++) {
+      getRandomRecipe();
+    }
   }, []);
   console.log(recipes);
   return (
